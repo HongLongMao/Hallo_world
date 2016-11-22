@@ -1,0 +1,15 @@
+x<-5
+x
+demo(graphics)# 展示r語言圖形功能
+
+data(iris)#IRIS = 鳶尾花
+plot(iris)
+
+x<-c(1,2,3,4,5)#c = concatenate,整合、串聯之意
+y<-c(5,10,15,20,25)
+plot(x,y)
+
+install.packages("ggmap")#台灣地圖
+library(ggmap)
+map.taiwan <- get_map(location="taiwan",zoom=8)
+ggmap(map.taiwan)
